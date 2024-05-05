@@ -4,18 +4,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
+    <video autoplay muted loop id="background-video">
+        <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <section id="top">
 
-        <div class="topbar">
-            <img src="images/ConnexIT.png" alt="Image" class="icon">
+        <div class="topbar" id="top_Bar">
+            <a href="index.html"><img class="ticon" src="images/Final Logo@8x.png"></a>
+            <div class="space"></div>
             <button class="topbarbtn">Home</button>
             <button class="topbarbtn">About</button>
             <button class="topbarbtn">Global Presence</button>
             <button class="topbarbtn">News & Events</button>
             <button class="topbarbtn">Contact US</button>
+            <script>
+                // JavaScript to change color on scroll
+                window.addEventListener('scroll', function() {
+                    var topBar = document.getElementById('top_Bar');
+                    if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color to change
+                        topBar.classList.add('scrolled');
+                    } else {
+                        topBar.classList.remove('scrolled');
+                    }
+                });
+            </script>
             
         </div>
+    </section>
+    <section id="hero">
+        <div class="hr">
+            <div class="hedline animate__animated animate__bounceInUp"><h1>Empowering connections,<br> Igniting possibilities, <br>And powering the future through innovation <br>And collaboration.</h1>
+                
+            </div>
+            <div class="animate__animated animate__bounceInUp"><h3 style="font-size: medium;">Unleashing Potential, Everywhere <i><strong><u>CONNEX HQ </u></strong></i></h3></div>
+        </div>
+        <div class="vm">
+            <div class="vis">
+                <p class="hidden" id="popupText">Your pop-up text here</p>
+            </div>
+            <div class="mis">
+
+            </div>
+        </div>
+
+    </section>
     
     
 </body>
