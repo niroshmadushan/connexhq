@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px) {
+    /* Your desktop styles here */
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .topbar{
+        float: left;
+    }
+    .topbar .topbarbtn {
+        float: left;
+    }
+ 
+    .topbar .icon{
+        width: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Styles for mobile */
+/* These styles will apply to screens with a maximum width of 767 pixels */
+@media screen and (max-width: 767px) {
+
+
+    .topbarbtn{
+        visibility: hidden;
+    }
+    /* Your mobile styles here */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
